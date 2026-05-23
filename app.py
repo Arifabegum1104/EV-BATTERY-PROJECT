@@ -16,7 +16,7 @@ uploaded_file = st.file_uploader("பேட்டரி செல்லின்
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-    st.image(img, caption="Scanned Battery Cell Image", use_container_width=True)
+    st.image(img, caption="Scanned Battery Cell Image", use_column_width=True)
     
     # 2. Prediction போலி அனிமேஷன் (உண்மையான AI மாடல் போலவே காட்டும்)
     with st.spinner("AI மாடல் ஸ்கேன் செய்கிறது..."):
